@@ -1,0 +1,90 @@
+:root {
+    --letras: rgb(255, 255, 255);
+    --bgc_oscuro: rgb(41, 39, 39);
+    --bgc_oscuro_clar: rgba(100, 95, 95, .5);
+
+    --bgc_oscuro_transp: rgba(41, 39, 39, .5);
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+}
+.navegation {
+    display: block;
+    height: 10vh;
+    background-color: var(--bgc_oscuro);
+}
+.navegation-options {
+    position: absolute;
+    padding-inline-start: 0px;
+    top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    margin: 0px;
+    background-color: var(--bgc_oscuro_transp);
+    transform: translateX(-90%);
+}
+.navegation-options li {
+    display: block;
+    padding: 30px 0;
+    padding-left: 60px;
+}
+.navegation-options li:hover{
+    background: var(--bgc_oscuro_clar);
+}
+.navegation-options a {
+    color: var(--letras);
+}
+.picture-image {
+    height: 6vh;
+    border-radius: 50%;
+    margin: 14px 0 0 14px;
+}
+.menu {
+    display: none;
+}
+.icon-menu {
+    float: right;
+    cursor: pointer;
+    margin: 14px 14px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.about_me {
+    text-align: center;
+}
+.photo-dumas {
+    width: 20rem;
+    margin: 50px 0px 0px 0px;
+    border-radius: 50%;
+}
+.name {
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Raleway', Arial;
+}
+.title {
+    margin: 0px;
+    font-size: 7px;
+    letter-spacing: 2px;
+}
+.title-profession {
+    font-weight: lighter;
+    margin: 0px;
+
+}
