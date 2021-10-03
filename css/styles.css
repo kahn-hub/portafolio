@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
 :root {
     --letras: rgb(255, 255, 255);
-    --bgc_oscuro: rgb(41, 39, 39);
+    --bgc_oscuro: rgb(26, 32, 44);
     --bgc_oscuro_clar: rgba(100, 95, 95, .5);
-
     --bgc_oscuro_transp: rgba(41, 39, 39, .5);
+    /* letras */
+    --letra_dosis: 'Dosis', sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -17,18 +19,19 @@ a {
 }
 .navegation {
     display: block;
-    height: 10vh;
+    height: 60px;
     background-color: var(--bgc_oscuro);
 }
 .navegation-options {
     position: absolute;
     padding-inline-start: 0px;
-    top: 10vh;
-    height: 90vh;
+    top: 60px;
+    height: auto;
     width: 100vw;
     margin: 0px;
     background-color: var(--bgc_oscuro_transp);
-    transform: translateX(-90%);
+    transform: translateX(100%);
+    transition: all .5s;
 }
 .navegation-options li {
     display: block;
@@ -41,10 +44,13 @@ a {
 .navegation-options a {
     color: var(--letras);
 }
+.mostrar {
+    transform: translateX(0%);
+}
 .picture-image {
-    height: 6vh;
+    height: 40px;
     border-radius: 50%;
-    margin: 14px 0 0 14px;
+    margin: 10px 0 0 10px;
 }
 .menu {
     display: none;
@@ -52,7 +58,7 @@ a {
 .icon-menu {
     float: right;
     cursor: pointer;
-    margin: 14px 14px 0 0;
+    margin: 16px 16px 0 0;
 }
 
 
@@ -64,23 +70,31 @@ a {
 
 
 
-
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .about_me {
     text-align: center;
 }
 .photo-dumas {
-    width: 20rem;
+    width: 15rem;
     margin: 50px 0px 0px 0px;
     border-radius: 50%;
 }
 .name {
     margin: 0px;
-    padding: 5px;
-    font-family: 'Raleway', Arial;
+    padding: 4px;
+    text-transform: uppercase;
+    font-family: var(--letra_dosis);
+    letter-spacing: 5px;
+    font-size: 20px;
 }
 .title {
     margin: 0px;
-    font-size: 7px;
+    font-family: var(--letra_dosis);
+    font-size: 9px;
     letter-spacing: 2px;
 }
 .title-profession {
