@@ -20,26 +20,51 @@
             <input type="checkbox" id="menu" class="menu">       
             <label for="menu" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></label>     
             <ul class="navegation-options" id="menu-despleg">
+                <li> <a href="#">Home</a></li>
                 <li> <a href="#">Sobre mi</a></li>
-                <li> <a href="#">Proyectos</a></li>
-                <li> <a href="#">Lenguajes</a></li>
-                <li> <a href="#">Contactos</a></li>
+                <li> <a href="#">Servicios</a></li>
+                <li> <a href="#">Portafolio</a></li>
+                <li> <a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <section class="about_me">
+    <main class="main">
+        <section class="home">
             <picture>
                 <source srcset="assets/images/foto-de-dumas1.webp">
                 <img class="photo-dumas" src="assets/images/foto-de-dumas1.jpeg" alt="foto de Dumas">
             </picture>
-            <h1 class="name">Dumas Ilean Párraga Mendoza</h1>
-            <article class="title">
+            <h1 class="name container">Hola!<br><strong>Soy Dumas Ilean Párraga Mendoza</strong><br>Frontend Developer</h1>
+            <!-- <article class="title">
             <h2 class="title-profession">Front-End Developer</h2>
+            </article> -->
+        </section>
+        <section class="about-me">
+            <article class="interests container">
+                <h2 class="interests-title">Sobre mi</h2>
+                <p class="interests-description">
+                    Soy Dumas Ilean Párraga Mendoza, soy un desarrollador Frontend con excelentes habilidades colaborativas. <br>Me encanta colaborar con un equipo, estoy buscando una posición de tiempo completo como desarrollador Frontend, donde pueda aplicar mis conocimientos y habilidades para resolver problemas.
+                    <!-- I'm Dumas Ilean Párraga Mendoza, I'm a Frontend Developer with excellent collaborative skills. <br>I love collaborating as a team, I'm looking for a full time position in Frontend Developer, where I can apply my knowledge and skills to solve problems. -->
+                </p>
             </article>
-            <article class="interests">
-                <h2 class="interests-title">Datos sobre mi, mis gustos, pasatiempos</h2>
-                <p class="interests-description">Soy Dumas, tengo 21 años, vivo en Ecuador y entre las cosas que me gustan esta leer libros, las matemáticas, me encanta estudiar acerca de temas nuevos principalmente relacionados con la informática y la biología.</p>
+            <article class="skills">
+                <h2 class="skills-title">Mis habilidades</h2>
+                <section>
+                    <div class="logos">
+                        <img src="/assets/svg/html-logo.svg" alt="html logo">  
+                    </div>  
+                    <div class="logos">
+                        <img src="/assets/svg/css-logo.svg" alt="css logo">
+                    </div>
+                    <div class="logos js">
+                        <img src="/assets/svg/javascript-logo.svg" alt="javascript logo">
+                    </div>
+                    <div class="logos git">
+                        <img src="/assets/svg/git-logo.svg" alt="git logo">
+                    </div>
+                </section>
+                
+                
             </article>
         </section>
     </main>

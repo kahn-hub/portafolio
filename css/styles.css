@@ -2,8 +2,8 @@
 :root {
     --letras: rgb(255, 255, 255);
     --bgc_oscuro: rgb(26, 32, 44);
-    --bgc_oscuro_clar: rgba(100, 95, 95, .5);
-    --bgc_oscuro_transp: rgba(41, 39, 39, .5);
+    --bgc_oscuro_clar: rgba(52, 59, 75, 0.8);
+    --bgc_oscuro_transp: rgba(26, 32, 44, .5);
     /* letras */
     --letra_dosis: 'Dosis', sans-serif;
 }
@@ -18,7 +18,10 @@ a {
     text-decoration: none;
 }
 .navegation {
+    position: absolute;
+    z-index: 50;
     display: block;
+    width: 100%;
     height: 60px;
     background-color: var(--bgc_oscuro);
 }
@@ -30,13 +33,14 @@ a {
     width: 100vw;
     margin: 0px;
     background-color: var(--bgc_oscuro_transp);
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: all .5s;
 }
 .navegation-options li {
     display: block;
     padding: 30px 0;
     padding-left: 60px;
+    border: 1px solid var(--letras);
 }
 .navegation-options li:hover{
     background: var(--bgc_oscuro_clar);
@@ -62,34 +66,31 @@ a {
 }
 
 
+/* /////////MAIN///////////////////////// */
+/* /////////HOME///////////////////////// */
 
 
-
-
-
-
-
-
-.container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.about_me {
+.home {
+    height: 100vh;
     text-align: center;
+    background-color: var(--bgc_oscuro);
+    color: var(--letras);
 }
 .photo-dumas {
-    width: 15rem;
-    margin: 50px 0px 0px 0px;
+    width: 18rem;
+    margin: 110px 0px 0px 0px;
     border-radius: 50%;
 }
 .name {
     margin: 0px;
     padding: 4px;
-    text-transform: uppercase;
     font-family: var(--letra_dosis);
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-size: 20px;
+    line-height: 30px;
+}
+.name strong {
+    color: rgb(120, 124, 175);
 }
 .title {
     margin: 0px;
@@ -101,4 +102,63 @@ a {
     font-weight: lighter;
     margin: 0px;
 
+}
+
+
+
+/* /////////ABOUT ME///////////////////////// */
+
+.about-me {
+    background-color: rgb(54, 32, 145);
+    /* background-color: rgb(36, 42, 66); */
+    font-family: var(--letra_dosis);
+    color: var(--letras);
+    height: 100vh;
+}
+.interests {
+    text-align: center;
+    padding-top: 25px;
+}
+.interests-title {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.interests-description {
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-size: 17px;
+    line-height: 30px;
+}
+.skills {
+    text-align: center;
+}
+.skills-title {
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.logos {
+    display: inline-block;
+    margin: 0px 25px 15px 25px;
+}
+.logos img {
+    width: 6rem;
+}
+.js img {
+    border-radius: 10px;
+    font-size: 0.3rem;
+    width: 20em;
+}
+
+
+
+
+
+.container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
